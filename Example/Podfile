@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'MXRichTextView_Example' do
+  pod 'MXRichTextView', :path => '../'
+end

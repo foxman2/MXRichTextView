@@ -1,0 +1,16 @@
+PODS:
+  - MXRichTextView (0.1.0)
+
+DEPENDENCIES:
+  - MXRichTextView (from `../`)
+
+EXTERNAL SOURCES:
+  MXRichTextView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MXRichTextView: 7b317990b2d305b2c362fe02a83eb13d80d57aa6
+
+PODFILE CHECKSUM: adfaf241cab624760ec3792fc9f82168e5bfa432
+
+COCOAPODS: 1.9.0
