@@ -20,22 +20,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let accessView = UIView()
-        accessView.translatesAutoresizingMaskIntoConstraints = false
-        accessView.backgroundColor = .red
-        view.addSubview(accessView)
-        accessView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        accessView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        accessView.heightAnchor.constraint(equalToConstant: 44).isActive = true
-        bottomConstraint = view.bottomAnchor.constraint(equalTo:  accessView.bottomAnchor)
+        guard let inputToolBar = Bundle.main.loadNibNamed("MXInputToolBar", owner: nil, options: nil)?.first as? MXInputToolBar else {
+            fatalError()
+        }
+        inputToolBar.setupView(textView: textView)
+        inputToolBar.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(inputToolBar)
+        inputToolBar.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        inputToolBar.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        bottomConstraint = view.bottomAnchor.constraint(equalTo:  inputToolBar.bottomAnchor)
         bottomConstraint?.isActive = true
         
-        let image = UIImage(named: "ic_format_bold")!
-        let activeIm = UIImage(named: "ic_format_h1")!
-        let config = MXRichTextButton.Config(icon: image, activeIcon: activeIm)
-        let button = MXRichTextButton(style: .bold, config: config, textView: textView)
-        button.sizeToFit()
-        accessView.addSubview(button)
         
         keyboardTracker = MXKeyboardTracker(trackBlock: { [weak self] frame, status in
             guard let self = self,

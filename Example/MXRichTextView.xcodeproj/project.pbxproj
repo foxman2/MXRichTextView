@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1B93483A24F60E3700234AB1 /* MXKeyboardTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B93483924F60E3700234AB1 /* MXKeyboardTracker.swift */; };
+		1B93483C24F653D700234AB1 /* MXInputToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B93483B24F653D700234AB1 /* MXInputToolBar.swift */; };
+		1B93483E24F653F000234AB1 /* MXInputToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B93483D24F653F000234AB1 /* MXInputToolBar.xib */; };
 		2FD36B1B1ADED8A5FAD17D6B /* Pods_MXRichTextView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C257ED4EB6A33F17001FAA89 /* Pods_MXRichTextView_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		1B93483924F60E3700234AB1 /* MXKeyboardTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXKeyboardTracker.swift; sourceTree = "<group>"; };
+		1B93483B24F653D700234AB1 /* MXInputToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXInputToolBar.swift; sourceTree = "<group>"; };
+		1B93483D24F653F000234AB1 /* MXInputToolBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MXInputToolBar.xib; sourceTree = "<group>"; };
 		1E04C320C731EA8871D991D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1EBAD93B2232C326A9DC52DD /* MXRichTextView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MXRichTextView.podspec; path = ../MXRichTextView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4941CD1DA70FB7013F8FAA64 /* Pods-MXRichTextView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXRichTextView_Example.release.xcconfig"; path = "Target Support Files/Pods-MXRichTextView_Example/Pods-MXRichTextView_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				1B93483B24F653D700234AB1 /* MXInputToolBar.swift */,
+				1B93483D24F653F000234AB1 /* MXInputToolBar.xib */,
 			);
 			name = "Example for MXRichTextView";
 			path = MXRichTextView;
@@ -181,6 +187,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				1B93483E24F653F000234AB1 /* MXInputToolBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +244,7 @@
 				1B93483A24F60E3700234AB1 /* MXKeyboardTracker.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				1B93483C24F653D700234AB1 /* MXInputToolBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,7 +26,12 @@ public class MXRichTextButton: UIControl {
         
     }
     
-    private let imageView = UIImageView()
+    private let imageView: UIImageView = {
+       let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .center
+        return imageView
+    }()
     private let config: Config
     private let style: Style
     private weak var textView: MXRichTextView?
@@ -47,7 +52,6 @@ public class MXRichTextButton: UIControl {
     }
     
     private func setupView() {
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(imageView)
         imageView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         imageView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
