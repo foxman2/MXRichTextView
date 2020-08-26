@@ -14,8 +14,36 @@ class MXInputToolBar: UIView {
     private let textActions: [(MXRichTextButton.Style, MXRichTextButton.Config)] = [
         (.bold, .init(icon: UIImage(named: "aa_b_n")!,
                       activeIcon: UIImage(named: "aa_b_n")!)),
+        
         (.italic, .init(icon: UIImage(named: "aa_italic_n")!,
         activeIcon: UIImage(named: "aa_italic_n")!)),
+        
+        (.underline, .init(icon: UIImage(named: "aa_underline_n")!,
+        activeIcon: UIImage(named: "aa_underline_n")!)),
+        
+        (.strikethrough, .init(icon: UIImage(named: "aa_strikethrough_n")!,
+        activeIcon: UIImage(named: "aa_strikethrough_n")!)),
+        
+        (.insertOrderedList, .init(icon: UIImage(named: "aa_numberedlist_n")!,
+        activeIcon: UIImage(named: "aa_numberedlist_r")!)),
+        
+        (.insertUnorderedList, .init(icon: UIImage(named: "aa_bulleted_list_n")!,
+        activeIcon: UIImage(named: "aa_bulleted_list_r")!)),
+        
+        (.justifyLeft, .init(icon: UIImage(named: "aa_left_n")!,
+        activeIcon: UIImage(named: "aa_left_r")!)),
+        
+        (.justifyCenter, .init(icon: UIImage(named: "aa_center_n")!,
+        activeIcon: UIImage(named: "aa_center_r")!)),
+        
+        (.justifyRight, .init(icon: UIImage(named: "aa_right_n")!,
+        activeIcon: UIImage(named: "aa_right_r")!)),
+        
+        (.formatH1, .init(icon: UIImage(named: "aa_h1_n")!,
+        activeIcon: UIImage(named: "aa_h1_r")!)),
+        
+        (.formatH2, .init(icon: UIImage(named: "aa_h2_n")!,
+        activeIcon: UIImage(named: "aa_h2_r")!)),
     ]
     @IBOutlet weak var textActionContentVeiw: UIStackView!
     @IBOutlet var textActionContraint: NSLayoutConstraint!

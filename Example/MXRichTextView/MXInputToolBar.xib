@@ -13,7 +13,7 @@
             <rect key="frame" x="0.0" y="0.0" width="584" height="88"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView verifyAmbiguity="ignoreSizes" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4rQ-ol-ntN" userLabel="TextActions">
+                <scrollView verifyAmbiguity="ignoreSizes" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rQ-ol-ntN" userLabel="TextActions">
                     <rect key="frame" x="0.0" y="0.0" width="584" height="44"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="Q5U-1L-Mzx">

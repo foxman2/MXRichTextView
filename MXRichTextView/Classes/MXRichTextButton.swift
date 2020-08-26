@@ -23,6 +23,19 @@ public class MXRichTextButton: UIControl {
         
         public static let bold = Style(key: "font-bold", value: "bold", command: .bold)
         public static let italic = Style(key: "font-italic", value: "italic", command: .italic)
+        public static let underline = Style(key: "font-underline", value: "underline", command: .underline)
+        public static let strikethrough = Style(key: "font-strikethrough", value: "strikethrough", command: .strikethrough)
+        
+        public static let formatH1 = Style(key: "font-block", value: "h1", command: .formatH1)
+        public static let formatH2 = Style(key: "font-block", value: "h2", command: .formatH2)
+        public static let formatH3 = Style(key: "font-block", value: "h3", command: .formatH3)
+        
+        public static let justifyLeft = Style(key: "text-align", value: "left", command: .justifyLeft)
+        public static let justifyCenter = Style(key: "text-align", value: "center", command: .justifyCenter)
+        public static let justifyRight = Style(key: "text-align", value: "right", command: .justifyRight)
+        
+        public static let insertOrderedList = Style(key: "list-style", value: "ordered", command: .insertOrderedList)
+        public static let insertUnorderedList = Style(key: "list-style", value: "unordered", command: .insertUnorderedList)
         
     }
     
