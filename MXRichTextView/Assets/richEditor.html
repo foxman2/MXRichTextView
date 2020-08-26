@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <!-- include jquery -->
+     <script src="jquery/jquery.js"></script>
+
+    <!-- include libs stylesheets -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.css" />
+    <script src="bootstrap/bootstrap.js"></script>
+
+    <link href="dist/summernote.css" rel="stylesheet">
+    <script src="dist/summernote.js"></script>
+
+    <script src='editor.js'></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        initSummernote();
+      })
+    </script>
+
+</head>
+
+<style>
+    .note-editor.note-frame {
+        border: 0px solid;
+    }
+    .panel {
+        margin-bottom: 0px;
+        border: 0px solid;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px #FFFFFF;
+    }
+    .note-editor.note-frame .note-editing-area .note-codable {
+        background-color: #FFFFFF;
+        color: #2F2F2F;
+        outline: none;
+    }
+    .note-editor.note-frame .note-editing-area .note-editable[contenteditable="false"] {
+        background-color: #FFFFFF;
+    }
+
+</style>
+
+<body>
+<!-- <div id="summernote"><p>Hello Summernote</p></div>
+<script>
+    $(document).ready(function() {
+        initSummernote();
+    });
+</script> -->
+<div id="summernote"></div>
+</body>
+</html>

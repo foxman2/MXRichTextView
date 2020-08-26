@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B93483A24F60E3700234AB1 /* MXKeyboardTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B93483924F60E3700234AB1 /* MXKeyboardTracker.swift */; };
 		2FD36B1B1ADED8A5FAD17D6B /* Pods_MXRichTextView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C257ED4EB6A33F17001FAA89 /* Pods_MXRichTextView_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B93483924F60E3700234AB1 /* MXKeyboardTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MXKeyboardTracker.swift; sourceTree = "<group>"; };
 		1E04C320C731EA8871D991D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1EBAD93B2232C326A9DC52DD /* MXRichTextView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MXRichTextView.podspec; path = ../MXRichTextView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4941CD1DA70FB7013F8FAA64 /* Pods-MXRichTextView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXRichTextView_Example.release.xcconfig"; path = "Target Support Files/Pods-MXRichTextView_Example/Pods-MXRichTextView_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				1B93483924F60E3700234AB1 /* MXKeyboardTracker.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -231,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B93483A24F60E3700234AB1 /* MXKeyboardTracker.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

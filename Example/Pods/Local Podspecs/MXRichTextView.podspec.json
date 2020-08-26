@@ -18,5 +18,11 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "MXRichTextView/Classes/**/*"
+  "source_files": "MXRichTextView/Classes/**/*",
+  "resource_bundles": {
+    "MXRichTextView": [
+      "MXRichTextView/Assets/*"
+    ]
+  },
+  "frameworks": "WebKit"
 }
