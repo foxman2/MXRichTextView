@@ -1,6 +1,8 @@
 var initSummernote = function(){
     $('#summernote').summernote({
         toolbar: [],
+        spellCheck: false,
+        disableGrammar: true,
         placeholder: 'Hello Bootstrap 4',
         callbacks: {
             onInit: function(e) {
@@ -199,4 +201,18 @@ var insertTable = function(dim){
 
 var insertHorizontalRule = function() {
     $('#summernote').summernote('insertHorizontalRule');
+}
+
+var saveRange = function() {
+    $('#summernote').summernote('saveRange');
+}
+
+var restoreRange = function() {
+    $('#summernote').summernote('restoreRange');
+}
+
+var getLinkInfo = function() {
+    const result = $('#summernote').summernote('getLinkInfo');
+    const json = JSON.stringify(result);
+    return json
 }

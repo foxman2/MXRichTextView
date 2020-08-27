@@ -88,12 +88,12 @@ public class MXRichTextView: UIView, MXSummernoteDelegate {
         }
     }
     
-    public func excuteCommand(_ cmd: MXRictEditCommand) {
-        cmd.excute(webView: webView)
+    public func excuteCommand(_ cmd: MXRictEditCommand, callback: ((Any?, Error?)->Void)? = nil) {
+        cmd.excute(webView: webView, callback: callback)
     }
     
-    public func excuteCommand(_ cmd: MXRictEditCommandProtocol) {
-        cmd.excute(webView: webView)
+    public func excuteCommand(_ cmd: MXRictEditCommandProtocol,  callback: ((Any?, Error?)->Void)? = nil) {
+        cmd.excute(webView: webView, callback: callback)
     }
     
     //delegate

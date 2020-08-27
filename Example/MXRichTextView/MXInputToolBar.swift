@@ -106,6 +106,31 @@ class MXInputToolBar: UIView {
         
         self.md_viewController?.present(vc, animated: true)
     }
+    
+    @IBAction func onClickLink(_ sender: Any) {
+        let builder = MDAlertBuilder()
+        .set(title: NSLocalizedString("Add a link", comment: ""))
+        .set(message: NSLocalizedString("Enter your link test and the URL", comment: ""))
+        
+        var nameTF:UITextField?, linkTF:UITextField?
+        builder.addAction(title: NSLocalizedString("Add Link", comment: "")) { _ in
+            guard let name = nameTF?.text,
+                let link = linkTF?.text else {
+                    return
+            }
+            self.textView?.excuteCommand(.createLink(text: name, url: link))
+        }
+        builder.addCancelAction()
+        let alert = builder.build()
+        alert.addTextField { tf in
+            nameTF = tf
+        }
+        alert.addTextField { tf in
+            linkTF = tf
+        }
+        self.md_viewController?.present(alert, animated: true)
+    }
+    
     @IBAction func onClickHideKeyboard(_ sender: Any) {
         textView?.endEditing(true)
     }

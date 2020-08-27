@@ -8,10 +8,12 @@
 import WebKit
 
 public protocol MXRictEditCommandProtocol {
-    func excute(webView: WKWebView)
+    func excute(webView: WKWebView, callback: ((Any?, Error?)->Void)?)
 }
 
 public enum MXRictEditCommand: MXRictEditCommandProtocol {
+    
+    typealias CallBack = (Any?, Error?)
     
     //acion
     case undo, redo
@@ -28,12 +30,17 @@ public enum MXRictEditCommand: MXRictEditCommandProtocol {
     // List Style
     case insertOrderedList, insertUnorderedList
 
+    case saveRange
+    case restoreRange
+    
     // Insert
     case insertImageUrl(String)
     
     case createLink(text: String, url: String)
     
-    public func excute(webView: WKWebView) {
+    case getLinkInfo
+    
+    public func excute(webView: WKWebView, callback: ((Any?, Error?)->Void)?) {
         let js: String
         switch self {
         case .undo:
@@ -66,12 +73,19 @@ public enum MXRictEditCommand: MXRictEditCommandProtocol {
             js = "insertOrderedList()"
         case .insertUnorderedList:
             js = "insertUnorderedList()"
+        case .saveRange:
+            js = "saveRange()"
+        case .restoreRange:
+            js = "restoreRange()"
         case .insertImageUrl(let url):
             js = "insertImageUrl('\(url)')"
         case .createLink(text: let text, url: let url):
             js = "createLink('\(text)','\(url)')"
+        case .getLinkInfo:
+            js = "getLinkInfo()"
         }
         
-        webView.evaluateJavaScript(js)
+        webView.evaluateJavaScript(js, completionHandler: callback)
     }
 }
+
