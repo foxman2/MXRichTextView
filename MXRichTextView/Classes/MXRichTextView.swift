@@ -48,6 +48,12 @@ public class MXRichTextView: UIView, MXSummernoteDelegate {
         let configuration = WKWebViewConfiguration()
         configuration.websiteDataStore = .nonPersistent()
         let webView = WKWebView(frame: .zero, configuration: configuration)
+        if #available(iOS 11.0, *) {
+            webView.scrollView.contentInsetAdjustmentBehavior = .never
+        } else {
+            // Fallback on earlier versions
+        }
+        webView.scrollView.isScrollEnabled = false
         webView.hack_removeInputAccessory()
         return webView
     }()
