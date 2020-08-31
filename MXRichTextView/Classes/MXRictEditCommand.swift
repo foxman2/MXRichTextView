@@ -16,7 +16,7 @@ public enum MXRictEditCommand: MXRictEditCommandProtocol {
     typealias CallBack = (Any?, Error?)
     
     //acion
-    case undo, redo
+    case undo, redo, focus
     
     // Format
     case bold, italic, underline, strikethrough
@@ -47,6 +47,8 @@ public enum MXRictEditCommand: MXRictEditCommandProtocol {
             js = "undo()"
         case .redo:
             js = "redo()"
+        case .focus:
+            js = "focus()"
         case .bold:
             js = "bold()"
         case .italic:
