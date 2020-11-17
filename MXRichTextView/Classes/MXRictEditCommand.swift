@@ -38,7 +38,11 @@ public enum MXRictEditCommand: MXRictEditCommandProtocol {
     
     case createLink(text: String, url: String)
     
+    case unlink
+    
     case getLinkInfo
+    
+    case clean
     
     public func excute(webView: WKWebView, callback: ((Any?, Error?)->Void)?) {
         let js: String
@@ -83,8 +87,12 @@ public enum MXRictEditCommand: MXRictEditCommandProtocol {
             js = "insertImageUrl('\(url)')"
         case .createLink(text: let text, url: let url):
             js = "createLink('\(text)','\(url)')"
+        case .unlink:
+            js = "unlink()"
         case .getLinkInfo:
             js = "getLinkInfo()"
+        case .clean:
+            js = "clean()"
         }
         
         webView.evaluateJavaScript(js, completionHandler: callback)

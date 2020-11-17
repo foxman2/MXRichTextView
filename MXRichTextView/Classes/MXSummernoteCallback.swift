@@ -6,13 +6,13 @@
 //
 import WebKit
 
-public protocol MXSummernoteDelegate {
+public protocol MXSummernoteDelegate: AnyObject {
     func updateCurrentStyle(_ style: [String:Any])
 }
 
 public class MXSummernoteCallback: NSObject, WKScriptMessageHandler {
     private let jsonDecoder = JSONDecoder()
-    var delegate: MXSummernoteDelegate?
+    weak var delegate: MXSummernoteDelegate?
     
     public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         guard let delegate = delegate else {

@@ -8,8 +8,6 @@
 import UIKit
 import WebKit
 
-import WebKit
-
 fileprivate final class InputAccessoryHackHelper: NSObject {
     @objc var inputAccessoryView: AnyObject? { return nil }
 }
@@ -90,7 +88,8 @@ public class MXRichTextView: UIView, MXSummernoteDelegate {
         }
         let path = bundle.url(forResource: "richEditor", withExtension: "html")!
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.webView.loadFileURL(path, allowingReadAccessTo: path)
+            let url = URL(fileURLWithPath: NSHomeDirectory())
+            self.webView.loadFileURL(path, allowingReadAccessTo: url)
         }
     }
     
@@ -100,6 +99,24 @@ public class MXRichTextView: UIView, MXSummernoteDelegate {
     
     public func excuteCommand(_ cmd: MXRictEditCommandProtocol,  callback: ((Any?, Error?)->Void)? = nil) {
         cmd.excute(webView: webView, callback: callback)
+    }
+    
+    public func getHtmlAndMarkdown(callback:@escaping (String?, String?, Error?) -> Void) {
+        webView.evaluateJavaScript("getHtmlAndMarkdown()") { (result, error) in
+            if let error = error {
+                callback(nil, nil, error)
+                return
+            }
+            
+            guard let result = result as? [String: String] else {
+                callback(nil, nil, nil)
+                return
+            }
+            
+            let html = result["html"]
+            let markdown = result["markdown"]
+            callback(html, markdown, nil)
+        }
     }
     
     //delegate
