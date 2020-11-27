@@ -34,6 +34,7 @@ public enum MXRictEditCommand: MXRictEditCommandProtocol {
     case restoreRange
     
     // Insert
+    case pasteHTML(String)
     case insertImageUrl(String)
     
     case createLink(text: String, url: String)
@@ -83,6 +84,8 @@ public enum MXRictEditCommand: MXRictEditCommandProtocol {
             js = "saveRange()"
         case .restoreRange:
             js = "restoreRange()"
+        case .pasteHTML(let html):
+            js = "pasteHTML('\(html)'"
         case .insertImageUrl(let url):
             js = "insertImageUrl('\(url)')"
         case .createLink(text: let text, url: let url):
@@ -93,6 +96,7 @@ public enum MXRictEditCommand: MXRictEditCommandProtocol {
             js = "getLinkInfo()"
         case .clean:
             js = "clean()"
+            
         }
         
         webView.evaluateJavaScript(js, completionHandler: callback)

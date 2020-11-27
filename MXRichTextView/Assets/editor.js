@@ -1,9 +1,11 @@
 var initSummernote = function(){
+    const placeholder = window.mx_placeholder === undefined ? null : window.mx_placeholder
+    
     $('#summernote').summernote({
         toolbar: [],
         spellCheck: false,
         disableGrammar: true,
-        placeholder: 'Reply',
+        placeholder: window.mx_placeholder,
         popover: {
             image: [
             ['remove', ['removeMedia']]
@@ -18,12 +20,19 @@ var initSummernote = function(){
             onInit: function(e) {
                 $("#summernote").summernote("fullscreen.toggle");
             },
+            onChange: function(contents, $editable) {
+                console.log('onChange:', contents, $editable);
+            },
             onUpdateButtonStatus: function(styleInfo) {
                 const json = JSON.stringify(styleInfo)
                 window.webkit.messageHandlers.mxCallback.postMessage(json)
             }
         }
     });
+    
+    if (window.mx_initalHtml != null) {
+        pasteHTML(window.mx_initalHtml)
+    }
 }
 
 var focus = function(){
@@ -40,7 +49,6 @@ var enable = function(){
 
 var pasteHTML = function(html){
     $('#summernote').summernote('code',html);
-    keepLastIndex(document.getElementsByClassName('note-editable panel-body')[0]);
 }
 
 function keepLastIndex(obj) {
@@ -207,9 +215,6 @@ var unlink = function() {
     $('#summernote').summernote('unlink');
 };
 
-var insertText = function(text) {
-    $('#summernote').summernote('editor.insertText', text);
-};
 
 var codeView = function(){
     $('#summernote').summernote('codeview.toggle');

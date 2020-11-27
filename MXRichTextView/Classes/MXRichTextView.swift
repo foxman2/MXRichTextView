@@ -44,7 +44,6 @@ public class MXRichTextView: UIView, MXSummernoteDelegate {
     
     var webView: WKWebView = {
         let configuration = WKWebViewConfiguration()
-        configuration.websiteDataStore = .nonPersistent()
         let webView = WKWebView(frame: .zero, configuration: configuration)
         if #available(iOS 11.0, *) {
             webView.scrollView.contentInsetAdjustmentBehavior = .never
@@ -57,6 +56,9 @@ public class MXRichTextView: UIView, MXSummernoteDelegate {
     }()
     
     var editorCallback = MXSummernoteCallback()
+    
+    public var placeholder: String?
+    public var initalHtml: String?
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -80,17 +82,35 @@ public class MXRichTextView: UIView, MXSummernoteDelegate {
         webView.configuration
             .userContentController
             .add(editorCallback, name: "mxCallback")
+        webView.scrollView.showsVerticalScrollIndicator = false
+        webView.scrollView.showsHorizontalScrollIndicator = false
 
+    }
+    
+    public func loadEditor() {
+        
+        var js = ""
+        if let placeholder = self.placeholder {
+            js += "window.mx_placeholder='\(placeholder)'\n"
+        }
+        
+        if let html = self.initalHtml {
+            js += "window.mx_initalHtml='\(html)'\n"
+        }
+        
+        let script = WKUserScript(source: js,
+                                  injectionTime: .atDocumentStart,
+                                  forMainFrameOnly: false)
+        webView.configuration.userContentController.addUserScript(script)
+        
         let cbundle = Bundle(for: MXRichTextView.self)
         guard let bundlePath = cbundle.path(forResource: "MXRichTextView", ofType: "bundle"),
-        let bundle = Bundle(path: bundlePath) else {
+              let bundle = Bundle(path: bundlePath) else {
             return
         }
         let path = bundle.url(forResource: "richEditor", withExtension: "html")!
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            let url = URL(fileURLWithPath: NSHomeDirectory())
-            self.webView.loadFileURL(path, allowingReadAccessTo: url)
-        }
+        let url = URL(fileURLWithPath: NSHomeDirectory())
+        self.webView.loadFileURL(path, allowingReadAccessTo: url)
     }
     
     public func excuteCommand(_ cmd: MXRictEditCommand, callback: ((Any?, Error?)->Void)? = nil) {
@@ -116,6 +136,20 @@ public class MXRichTextView: UIView, MXSummernoteDelegate {
             let html = result["html"]
             let markdown = result["markdown"]
             callback(html, markdown, nil)
+        }
+    }
+    
+    public func getLink(callback: @escaping (String?, String?, Error?) -> Void) {
+        self.excuteCommand(.getLinkInfo) { (info, error) in
+            var title: String? = nil
+            var link: String? = nil
+            if let json = info as? String,
+               let data = json.data(using: .utf8),
+               let jsonObj = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                title = jsonObj["text"] as? String
+                link = jsonObj["url"] as? String
+            }
+            callback(title, link, error)
         }
     }
     
