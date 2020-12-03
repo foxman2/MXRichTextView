@@ -15,9 +15,6 @@ public enum MXRictEditCommand: MXRictEditCommandProtocol {
     
     typealias CallBack = (Any?, Error?)
     
-    //acion
-    case undo, redo, focus
-    
     // Format
     case bold, italic, underline, strikethrough
     
@@ -29,9 +26,6 @@ public enum MXRictEditCommand: MXRictEditCommandProtocol {
     
     // List Style
     case insertOrderedList, insertUnorderedList
-
-    case saveRange
-    case restoreRange
     
     // Insert
     case pasteHTML(String)
@@ -48,12 +42,6 @@ public enum MXRictEditCommand: MXRictEditCommandProtocol {
     public func excute(webView: WKWebView, callback: ((Any?, Error?)->Void)?) {
         let js: String
         switch self {
-        case .undo:
-            js = "undo()"
-        case .redo:
-            js = "redo()"
-        case .focus:
-            js = "focus()"
         case .bold:
             js = "bold()"
         case .italic:
@@ -80,10 +68,6 @@ public enum MXRictEditCommand: MXRictEditCommandProtocol {
             js = "insertOrderedList()"
         case .insertUnorderedList:
             js = "insertUnorderedList()"
-        case .saveRange:
-            js = "saveRange()"
-        case .restoreRange:
-            js = "restoreRange()"
         case .pasteHTML(let html):
             js = "pasteHTML('\(html)'"
         case .insertImageUrl(let url):

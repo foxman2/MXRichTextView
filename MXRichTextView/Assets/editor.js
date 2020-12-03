@@ -24,6 +24,7 @@ var initSummernote = function(){
                 console.log('onChange:', contents, $editable);
             },
             onUpdateButtonStatus: function(styleInfo) {
+                console.log('onChange:', styleInfo);
                 const json = JSON.stringify(styleInfo)
                 window.webkit.messageHandlers.mxCallback.postMessage(json)
             }
@@ -70,18 +71,6 @@ var getHtmlAndMarkdown = function(){
         markdown: markdown
     }
 }
-
-var undo = function() {
-    $('#summernote').summernote('undo');
-};
-
-var redo = function() {
-    $('#summernote').summernote('redo');
-};
-
-var disable = function() {
-    $('#summernote').summernote('disable');
-};
 
 var enable = function() {
     $('#summernote').summernote('enable');
@@ -196,7 +185,11 @@ var lineHeight = function(lineHeight) {
 };
 
 var insertImageUrl = function(imageUrl) {
-    $('#summernote').summernote('insertImage', imageUrl, null);
+    $('#summernote').summernote('insertParagraph');
+    const range = $.summernote.range;
+    const lastRange = range.createFromSelection();
+    $('#summernote').summernote('editor.setLastRange', lastRange);
+    return $('#summernote').summernote('insertImage', imageUrl, null);
 };
 
 var insertText = function(text) {
