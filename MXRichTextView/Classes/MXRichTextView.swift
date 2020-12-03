@@ -39,6 +39,10 @@ extension WKWebView {
     }
 }
 
+public protocol MXRichTextViewDelegate: MXSummernoteDelegate {
+    
+}
+
 public class MXRichTextView: UIView, MXSummernoteDelegate {
     public static let updateStyleNotification = Notification.Name("updateStyleNotification")
     
@@ -59,6 +63,7 @@ public class MXRichTextView: UIView, MXSummernoteDelegate {
     
     public var placeholder: String?
     public var initalHtml: String?
+    public weak var delegate: MXRichTextViewDelegate?
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -79,11 +84,16 @@ public class MXRichTextView: UIView, MXSummernoteDelegate {
         webView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         webView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         webView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        
         webView.configuration
             .userContentController
-            .add(editorCallback, name: "mxCallback")
-        webView.scrollView.showsVerticalScrollIndicator = false
-        webView.scrollView.showsHorizontalScrollIndicator = false
+            .add(editorCallback, name: editorCallback.event_update_current_style)
+        webView.configuration
+            .userContentController
+            .add(editorCallback, name: editorCallback.event_text_change)
+        webView.configuration
+            .userContentController
+            .add(editorCallback, name: editorCallback.event_link_info)
 
     }
     
@@ -156,5 +166,14 @@ public class MXRichTextView: UIView, MXSummernoteDelegate {
     //delegate
     public func updateCurrentStyle(_ style: [String : Any]) {
         NotificationCenter.default.post(name: MXRichTextView.updateStyleNotification, object: self, userInfo: style)
+        delegate?.updateCurrentStyle(style)
+    }
+    
+    public func richTextChange(text: String?, isEmpty: Bool) {
+        delegate?.richTextChange(text: text, isEmpty: isEmpty)
+    }
+    
+    public func richTextLinkInfoAtSelection(_ info: [String : Any]) {
+        delegate?.richTextLinkInfoAtSelection(info)
     }
 }
