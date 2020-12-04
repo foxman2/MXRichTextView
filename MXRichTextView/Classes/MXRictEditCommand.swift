@@ -37,6 +37,8 @@ public enum MXRictEditCommand: MXRictEditCommandProtocol {
     
     case getLinkInfo
     
+    case insertAttachment(_ url: String)
+    
     case clean
     
     public func excute(webView: WKWebView, callback: ((Any?, Error?)->Void)?) {
@@ -78,6 +80,8 @@ public enum MXRictEditCommand: MXRictEditCommandProtocol {
             js = "unlink()"
         case .getLinkInfo:
             js = "getLinkInfo()"
+        case .insertAttachment(let url):
+            js = "insertAttachment('\(url)')"
         case .clean:
             js = "clean()"
             

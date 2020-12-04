@@ -1,3 +1,17 @@
+//test
+// const iosMessage = {
+//     postMessage: (obj) => {
+//         console.log(obj)
+//     }
+// };
+
+// window.webkit = {
+//     messageHandlers: {}
+// }
+// window.webkit.messageHandlers.event_text_change = iosMessage;
+// window.webkit.messageHandlers.event_update_current_style = iosMessage;
+// window.webkit.messageHandlers.event_link_info = iosMessage;
+
 var initSummernote = function(){
     const placeholder = window.mx_placeholder === undefined ? null : window.mx_placeholder
     
@@ -223,6 +237,18 @@ var createLink = function(linkText, linkUrl) {
 var unlink = function() {
     $('#summernote').summernote('unlink');
 };
+
+var insertAttachment = function(url) {
+    $('#summernote').summernote('insertParagraph');
+    const range = $.summernote.range;
+    const lastRange = range.createFromSelection();
+    $('#summernote').summernote('editor.setLastRange', lastRange);
+
+    const name = url.substring(url.lastIndexOf("/") + 1);
+    const html = `<img style=\"width: 20px;\" src="https://static.engagemessage.com/images/attachment@3x.png"><a href="${url}">${name}</a>`;
+    $('#summernote').summernote('pasteHTML', html);
+    
+}
 
 
 var codeView = function(){
