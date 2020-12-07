@@ -245,7 +245,7 @@ var insertAttachment = function(url) {
     $('#summernote').summernote('editor.setLastRange', lastRange);
 
     const name = url.substring(url.lastIndexOf("/") + 1);
-    const html = `<img style=\"width: 20px;\" src="https://static.engagemessage.com/images/attachment@3x.png"><a href="${url}">${name}</a>`;
+    const html = `<img style=\"width: 20px;\" src="https://static.engagemessage.com/images/attachment.png"><a href="${url}">${name}</a>`;
     $('#summernote').summernote('pasteHTML', html);
     
 }
