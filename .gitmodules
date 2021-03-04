@@ -1,0 +1,3 @@
+[submodule "MXRichTextView/Assets/dist"]
+	path = MXRichTextView/Assets/dist
+	url = ../../AppNana/summernote-release.git
