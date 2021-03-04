@@ -7,23 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		012D5FF3BA7712C5AA605206A2B4D787 /* MXRictEditCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA4570F65391CFC00247E193F19429B /* MXRictEditCommand.swift */; };
-		07FC2584B0A57CEAE94D8EE6D552076C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB538050BF68810F02D1D840033C89B /* Foundation.framework */; };
+		012D5FF3BA7712C5AA605206A2B4D787 /* MXRictEditCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF076A2F85D1A022191F6A3C5B35009 /* MXRictEditCommand.swift */; };
+		033BA4E4C85D079FFB36362EF0024A5F /* editor.js in Resources */ = {isa = PBXBuildFile; fileRef = 36BD71267FF1AD894CDAC478122021A9 /* editor.js */; };
 		302A8E5344B6EF485D714AFE1A9245F7 /* Pods-MXRichTextView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12958AB0FA01C9115E5C488493B6BB78 /* Pods-MXRichTextView_Example-dummy.m */; };
 		3D83B0576A662B90FCED8A427B5EFA5E /* MXRichTextView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1F2CB4D88E12C8567636AA738E373AF1 /* MXRichTextView.bundle */; };
-		433C16CDEABCA0C95D6DAD9B40646D37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB538050BF68810F02D1D840033C89B /* Foundation.framework */; };
-		4818ADA8161623C628AC7DD48BC35F9E /* editor.js in Resources */ = {isa = PBXBuildFile; fileRef = 57C08102FF51211E282C59F76826B4C6 /* editor.js */; };
-		494ACA68B13C7AF2E7605B3EE5BDCF3D /* MXRichTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869BCA5730005D30F46FA2F552DC580A /* MXRichTextView.swift */; };
-		6CC7BB7C2FBD6AA78771624423FE2BBA /* MXRichTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5C0C3B50C06D3CA57C43F867256AC6 /* MXRichTextButton.swift */; };
-		931600BC188FA5744FB105F0CF45DFB7 /* bootstrap in Resources */ = {isa = PBXBuildFile; fileRef = B249435FF6FC7ABF448D93751E74D2DC /* bootstrap */; };
-		A50525C8C93B11038DBE99E2A4407C69 /* richEditor.html in Resources */ = {isa = PBXBuildFile; fileRef = 8573CD2B8C5C5FEB4FA5937E9CCC3197 /* richEditor.html */; };
-		B53BE48CDB08F8BE0825543067415992 /* MXRichTextView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDCEA5C6CDDCADB5CA91752F6892DDC /* MXRichTextView-dummy.m */; };
-		BED13A6AC0BBB38FA31B0A4D31567201 /* MXSummernoteCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD11C1CF1CD92A8367CD6A446A17119C /* MXSummernoteCallback.swift */; };
+		48508A3448ACDACB718B01D1BD55C398 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB655F8A3B9F0C3DB37D349580B2779 /* WebKit.framework */; };
+		494ACA68B13C7AF2E7605B3EE5BDCF3D /* MXRichTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F9B9948A406F326C256EA4686FD022 /* MXRichTextView.swift */; };
+		6CC7BB7C2FBD6AA78771624423FE2BBA /* MXRichTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2772A412BB6A140CB4F46B64EF6A0A /* MXRichTextButton.swift */; };
+		7EEB96F29DBBA0A5AD5829915390D089 /* jquery in Resources */ = {isa = PBXBuildFile; fileRef = 8437F7DA505E2EBE044DABB54E965EC0 /* jquery */; };
+		82D051AD6E0A4B26D03313792F861045 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 63F4CC94F762ACE4E4E11ECB3320EE73 /* dist */; };
+		990DA1948C192AF70D645B89890CAFFB /* richEditor.html in Resources */ = {isa = PBXBuildFile; fileRef = FBDFD333409C66EFA9ABEBDAF1844037 /* richEditor.html */; };
+		AC515EBE79461BA789AA2CD360EA25C0 /* turndown.js in Resources */ = {isa = PBXBuildFile; fileRef = 14DABFD20140B915EB9E21909E6BCE06 /* turndown.js */; };
+		B1430889E33B025E8586E199B45F6554 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D20E8E61FE391C0ED97D6F5A9EEEFD /* Foundation.framework */; };
+		B53BE48CDB08F8BE0825543067415992 /* MXRichTextView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCBA132EEF2DFF1535DD83388123E7 /* MXRichTextView-dummy.m */; };
+		BED13A6AC0BBB38FA31B0A4D31567201 /* MXSummernoteCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9568803AA9BCCE6DB7EA22F8B17B6595 /* MXSummernoteCallback.swift */; };
 		CE4AC5523DC25B46EAFF26FBEB66849D /* Pods-MXRichTextView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A4091E8A93E7DC96F56134012FBE08 /* Pods-MXRichTextView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5FB0F761DF6AAA73AD1D7920B9CA0E5 /* MXRichTextView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C52C6A961247E9392D6DFB801815D256 /* MXRichTextView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2A492166B87B406B3B134D9374507A3 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 08ECF7BB67972E18D771B51FF7A006C6 /* dist */; };
-		E746C274143BC36BE3088C80319334A1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4B4A8C935FFD2386371C746901F5F6 /* WebKit.framework */; };
-		F0B812883D946F9C2C37E28C929E68F5 /* jquery in Resources */ = {isa = PBXBuildFile; fileRef = 76C20ED425249DD8DF2742F34DFA0DFC /* jquery */; };
+		D5FB0F761DF6AAA73AD1D7920B9CA0E5 /* MXRichTextView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 092807D8272D4A3EA5DE70F07A04FAFA /* MXRichTextView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5E48BA108A562E79B7D7B41BCC679CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D20E8E61FE391C0ED97D6F5A9EEEFD /* Foundation.framework */; };
+		F92588AF5804421EAD42A7024086AF34 /* bootstrap in Resources */ = {isa = PBXBuildFile; fileRef = 95492DC77E46EEDB82870CD80D5F1CA8 /* bootstrap */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,39 +47,40 @@
 /* Begin PBXFileReference section */
 		02182AEC7BE15FD72801840ECF5A4651 /* Pods-MXRichTextView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MXRichTextView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		08B9E84EE835D628EE829D913114988B /* Pods-MXRichTextView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MXRichTextView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		08ECF7BB67972E18D771B51FF7A006C6 /* dist */ = {isa = PBXFileReference; includeInIndex = 1; name = dist; path = MXRichTextView/Assets/dist; sourceTree = "<group>"; };
+		092807D8272D4A3EA5DE70F07A04FAFA /* MXRichTextView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXRichTextView-umbrella.h"; sourceTree = "<group>"; };
+		0AF076A2F85D1A022191F6A3C5B35009 /* MXRictEditCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MXRictEditCommand.swift; path = MXRichTextView/Classes/MXRictEditCommand.swift; sourceTree = "<group>"; };
+		0BBDF8DEC5D56316986BBAA0FBC0F71E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		0F34607BCEFCC46030431691025A4689 /* Pods-MXRichTextView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MXRichTextView_Example-Info.plist"; sourceTree = "<group>"; };
 		12958AB0FA01C9115E5C488493B6BB78 /* Pods-MXRichTextView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MXRichTextView_Example-dummy.m"; sourceTree = "<group>"; };
-		19730740B763B70787B1DDFA38BFA807 /* MXRichTextView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MXRichTextView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		14DABFD20140B915EB9E21909E6BCE06 /* turndown.js */ = {isa = PBXFileReference; includeInIndex = 1; name = turndown.js; path = MXRichTextView/Assets/turndown.js; sourceTree = "<group>"; };
 		1F2CB4D88E12C8567636AA738E373AF1 /* MXRichTextView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MXRichTextView.bundle; path = "MXRichTextView-MXRichTextView.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		20BF08D3950853DD639BDF3ABCBE2029 /* MXRichTextView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MXRichTextView.modulemap; sourceTree = "<group>"; };
-		271AC61F4C7C354195D2B798B93BF083 /* MXRichTextView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MXRichTextView-Info.plist"; sourceTree = "<group>"; };
-		2BC35EAB3D936753B192F065947CABB0 /* MXRichTextView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXRichTextView-prefix.pch"; sourceTree = "<group>"; };
+		285F6DC7C73585C4BCAFE914E55E7386 /* MXRichTextView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MXRichTextView.modulemap; sourceTree = "<group>"; };
+		2BB655F8A3B9F0C3DB37D349580B2779 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		32D20E8E61FE391C0ED97D6F5A9EEEFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		35A4091E8A93E7DC96F56134012FBE08 /* Pods-MXRichTextView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MXRichTextView_Example-umbrella.h"; sourceTree = "<group>"; };
-		4CDAEB3125B43A264C02D992ABBBA388 /* ResourceBundle-MXRichTextView-MXRichTextView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MXRichTextView-MXRichTextView-Info.plist"; sourceTree = "<group>"; };
-		4EB538050BF68810F02D1D840033C89B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		57C08102FF51211E282C59F76826B4C6 /* editor.js */ = {isa = PBXFileReference; includeInIndex = 1; name = editor.js; path = MXRichTextView/Assets/editor.js; sourceTree = "<group>"; };
-		64B426272EBCBB147EDC0377284C0910 /* MXRichTextView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MXRichTextView.release.xcconfig; sourceTree = "<group>"; };
+		36BD71267FF1AD894CDAC478122021A9 /* editor.js */ = {isa = PBXFileReference; includeInIndex = 1; name = editor.js; path = MXRichTextView/Assets/editor.js; sourceTree = "<group>"; };
+		3D2772A412BB6A140CB4F46B64EF6A0A /* MXRichTextButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MXRichTextButton.swift; path = MXRichTextView/Classes/MXRichTextButton.swift; sourceTree = "<group>"; };
+		5ACCBA132EEF2DFF1535DD83388123E7 /* MXRichTextView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MXRichTextView-dummy.m"; sourceTree = "<group>"; };
+		63F4CC94F762ACE4E4E11ECB3320EE73 /* dist */ = {isa = PBXFileReference; includeInIndex = 1; name = dist; path = MXRichTextView/Assets/dist; sourceTree = "<group>"; };
+		6897208EB52ACCFE4E9D648E2540FCEA /* MXRichTextView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXRichTextView-prefix.pch"; sourceTree = "<group>"; };
 		6CBA99E8511493C35D4D0C3FBCDE3C72 /* Pods_MXRichTextView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MXRichTextView_Example.framework; path = "Pods-MXRichTextView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		714A166D16553FDB9F1B6F0BAA84BA65 /* Pods-MXRichTextView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MXRichTextView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		76C20ED425249DD8DF2742F34DFA0DFC /* jquery */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery; path = MXRichTextView/Assets/jquery; sourceTree = "<group>"; };
-		7DDCEA5C6CDDCADB5CA91752F6892DDC /* MXRichTextView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MXRichTextView-dummy.m"; sourceTree = "<group>"; };
 		7F4D702C03500F29E1AF0029F8BE68D2 /* MXRichTextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MXRichTextView.framework; path = MXRichTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F9A7EC5A10E83194A4522124358A22 /* Pods-MXRichTextView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MXRichTextView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8573CD2B8C5C5FEB4FA5937E9CCC3197 /* richEditor.html */ = {isa = PBXFileReference; includeInIndex = 1; name = richEditor.html; path = MXRichTextView/Assets/richEditor.html; sourceTree = "<group>"; };
-		869BCA5730005D30F46FA2F552DC580A /* MXRichTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MXRichTextView.swift; path = MXRichTextView/Classes/MXRichTextView.swift; sourceTree = "<group>"; };
-		89A682C7874CE997BFAEAE778618AAA2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8437F7DA505E2EBE044DABB54E965EC0 /* jquery */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery; path = MXRichTextView/Assets/jquery; sourceTree = "<group>"; };
+		95492DC77E46EEDB82870CD80D5F1CA8 /* bootstrap */ = {isa = PBXFileReference; includeInIndex = 1; name = bootstrap; path = MXRichTextView/Assets/bootstrap; sourceTree = "<group>"; };
+		9568803AA9BCCE6DB7EA22F8B17B6595 /* MXSummernoteCallback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MXSummernoteCallback.swift; path = MXRichTextView/Classes/MXSummernoteCallback.swift; sourceTree = "<group>"; };
+		9A5E5D2BDD3F114920FA6B6299A2742C /* ResourceBundle-MXRichTextView-MXRichTextView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MXRichTextView-MXRichTextView-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B249435FF6FC7ABF448D93751E74D2DC /* bootstrap */ = {isa = PBXFileReference; includeInIndex = 1; name = bootstrap; path = MXRichTextView/Assets/bootstrap; sourceTree = "<group>"; };
-		BBA4570F65391CFC00247E193F19429B /* MXRictEditCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MXRictEditCommand.swift; path = MXRichTextView/Classes/MXRictEditCommand.swift; sourceTree = "<group>"; };
+		B934D6206F74013AAF6A25956C2698D4 /* MXRichTextView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MXRichTextView.release.xcconfig; sourceTree = "<group>"; };
+		B9F9B9948A406F326C256EA4686FD022 /* MXRichTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MXRichTextView.swift; path = MXRichTextView/Classes/MXRichTextView.swift; sourceTree = "<group>"; };
+		BFD09B5BEAEA184CE561122AE1272C74 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		C434D8F33200AD46D4FCD1903FC2C419 /* Pods-MXRichTextView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MXRichTextView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C52C6A961247E9392D6DFB801815D256 /* MXRichTextView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXRichTextView-umbrella.h"; sourceTree = "<group>"; };
-		DC5C0C3B50C06D3CA57C43F867256AC6 /* MXRichTextButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MXRichTextButton.swift; path = MXRichTextView/Classes/MXRichTextButton.swift; sourceTree = "<group>"; };
+		C79F35696C5CC549B853D2C25ED9758E /* MXRichTextView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MXRichTextView-Info.plist"; sourceTree = "<group>"; };
+		CAF2D29E4090EBDD31FC9B06AB4978AF /* MXRichTextView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MXRichTextView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EB500F24FC2CA77EE5F7D8F8C08CF2C9 /* Pods-MXRichTextView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MXRichTextView_Example.modulemap"; sourceTree = "<group>"; };
-		ED4B4A8C935FFD2386371C746901F5F6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
-		EE167009C3AEBC7EA4C942E91C9C94BC /* MXRichTextView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MXRichTextView.debug.xcconfig; sourceTree = "<group>"; };
-		F0C9C9501C5546EDCEED36137A294692 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		FD11C1CF1CD92A8367CD6A446A17119C /* MXSummernoteCallback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MXSummernoteCallback.swift; path = MXRichTextView/Classes/MXSummernoteCallback.swift; sourceTree = "<group>"; };
+		FA59929C8ECBE139F17BD2632035A37D /* MXRichTextView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MXRichTextView.debug.xcconfig; sourceTree = "<group>"; };
+		FBDFD333409C66EFA9ABEBDAF1844037 /* richEditor.html */ = {isa = PBXFileReference; includeInIndex = 1; name = richEditor.html; path = MXRichTextView/Assets/richEditor.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				433C16CDEABCA0C95D6DAD9B40646D37 /* Foundation.framework in Frameworks */,
-				E746C274143BC36BE3088C80319334A1 /* WebKit.framework in Frameworks */,
+				F5E48BA108A562E79B7D7B41BCC679CC /* Foundation.framework in Frameworks */,
+				48508A3448ACDACB718B01D1BD55C398 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07FC2584B0A57CEAE94D8EE6D552076C /* Foundation.framework in Frameworks */,
+				B1430889E33B025E8586E199B45F6554 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,16 +111,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		002D713C5E489E25E643DEF97D9C3F56 /* MXRichTextView */ = {
+		1213107A333B710312CD656EF1BA7224 /* MXRichTextView */ = {
 			isa = PBXGroup;
 			children = (
-				DC5C0C3B50C06D3CA57C43F867256AC6 /* MXRichTextButton.swift */,
-				869BCA5730005D30F46FA2F552DC580A /* MXRichTextView.swift */,
-				BBA4570F65391CFC00247E193F19429B /* MXRictEditCommand.swift */,
-				FD11C1CF1CD92A8367CD6A446A17119C /* MXSummernoteCallback.swift */,
-				EF48E2325C8D9ADA4818693E9AE06816 /* Pod */,
-				AFB8EBF41EEF7B21B2E02003600781BA /* Resources */,
-				1815FA4A9D8DD57265D6AD76EE4267BD /* Support Files */,
+				95492DC77E46EEDB82870CD80D5F1CA8 /* bootstrap */,
+				63F4CC94F762ACE4E4E11ECB3320EE73 /* dist */,
+				36BD71267FF1AD894CDAC478122021A9 /* editor.js */,
+				8437F7DA505E2EBE044DABB54E965EC0 /* jquery */,
+				3D2772A412BB6A140CB4F46B64EF6A0A /* MXRichTextButton.swift */,
+				B9F9B9948A406F326C256EA4686FD022 /* MXRichTextView.swift */,
+				0AF076A2F85D1A022191F6A3C5B35009 /* MXRictEditCommand.swift */,
+				9568803AA9BCCE6DB7EA22F8B17B6595 /* MXSummernoteCallback.swift */,
+				FBDFD333409C66EFA9ABEBDAF1844037 /* richEditor.html */,
+				14DABFD20140B915EB9E21909E6BCE06 /* turndown.js */,
+				F66D9E0F68E776369AD2E44C04D2F105 /* Pod */,
+				6099869C7FC6E2DDC400CE24493E03B6 /* Support Files */,
 			);
 			name = MXRichTextView;
 			path = ../..;
@@ -127,33 +134,9 @@
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				97F96517D3CC0BB7D2EF10AC9640CCCA /* iOS */,
+				D4666CE1A84ECF5C342FAD3C508C69DE /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1815FA4A9D8DD57265D6AD76EE4267BD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				20BF08D3950853DD639BDF3ABCBE2029 /* MXRichTextView.modulemap */,
-				7DDCEA5C6CDDCADB5CA91752F6892DDC /* MXRichTextView-dummy.m */,
-				271AC61F4C7C354195D2B798B93BF083 /* MXRichTextView-Info.plist */,
-				2BC35EAB3D936753B192F065947CABB0 /* MXRichTextView-prefix.pch */,
-				C52C6A961247E9392D6DFB801815D256 /* MXRichTextView-umbrella.h */,
-				EE167009C3AEBC7EA4C942E91C9C94BC /* MXRichTextView.debug.xcconfig */,
-				64B426272EBCBB147EDC0377284C0910 /* MXRichTextView.release.xcconfig */,
-				4CDAEB3125B43A264C02D992ABBBA388 /* ResourceBundle-MXRichTextView-MXRichTextView-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MXRichTextView";
-			sourceTree = "<group>";
-		};
-		2BA8050C1BDC9CB7083BD8604E1BFBDB /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				002D713C5E489E25E643DEF97D9C3F56 /* MXRichTextView */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		351611CEE8328B788E0A26533FDB1DE5 /* Targets Support Files */ = {
@@ -162,6 +145,14 @@
 				C3F1220E04245F2466B081F2577A46E4 /* Pods-MXRichTextView_Example */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4938753EFDB2312710F9EC0643D1209C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1213107A333B710312CD656EF1BA7224 /* MXRichTextView */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		542A32F0128920B597E4B3C3FCD9AD6D /* Products */ = {
@@ -174,25 +165,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		97F96517D3CC0BB7D2EF10AC9640CCCA /* iOS */ = {
+		6099869C7FC6E2DDC400CE24493E03B6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4EB538050BF68810F02D1D840033C89B /* Foundation.framework */,
-				ED4B4A8C935FFD2386371C746901F5F6 /* WebKit.framework */,
+				285F6DC7C73585C4BCAFE914E55E7386 /* MXRichTextView.modulemap */,
+				5ACCBA132EEF2DFF1535DD83388123E7 /* MXRichTextView-dummy.m */,
+				C79F35696C5CC549B853D2C25ED9758E /* MXRichTextView-Info.plist */,
+				6897208EB52ACCFE4E9D648E2540FCEA /* MXRichTextView-prefix.pch */,
+				092807D8272D4A3EA5DE70F07A04FAFA /* MXRichTextView-umbrella.h */,
+				FA59929C8ECBE139F17BD2632035A37D /* MXRichTextView.debug.xcconfig */,
+				B934D6206F74013AAF6A25956C2698D4 /* MXRichTextView.release.xcconfig */,
+				9A5E5D2BDD3F114920FA6B6299A2742C /* ResourceBundle-MXRichTextView-MXRichTextView-Info.plist */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		AFB8EBF41EEF7B21B2E02003600781BA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				B249435FF6FC7ABF448D93751E74D2DC /* bootstrap */,
-				08ECF7BB67972E18D771B51FF7A006C6 /* dist */,
-				57C08102FF51211E282C59F76826B4C6 /* editor.js */,
-				76C20ED425249DD8DF2742F34DFA0DFC /* jquery */,
-				8573CD2B8C5C5FEB4FA5937E9CCC3197 /* richEditor.html */,
-			);
-			name = Resources;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MXRichTextView";
 			sourceTree = "<group>";
 		};
 		C3F1220E04245F2466B081F2577A46E4 /* Pods-MXRichTextView_Example */ = {
@@ -216,19 +202,28 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				2BA8050C1BDC9CB7083BD8604E1BFBDB /* Development Pods */,
+				4938753EFDB2312710F9EC0643D1209C /* Development Pods */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				542A32F0128920B597E4B3C3FCD9AD6D /* Products */,
 				351611CEE8328B788E0A26533FDB1DE5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		EF48E2325C8D9ADA4818693E9AE06816 /* Pod */ = {
+		D4666CE1A84ECF5C342FAD3C508C69DE /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				F0C9C9501C5546EDCEED36137A294692 /* LICENSE */,
-				19730740B763B70787B1DDFA38BFA807 /* MXRichTextView.podspec */,
-				89A682C7874CE997BFAEAE778618AAA2 /* README.md */,
+				32D20E8E61FE391C0ED97D6F5A9EEEFD /* Foundation.framework */,
+				2BB655F8A3B9F0C3DB37D349580B2779 /* WebKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F66D9E0F68E776369AD2E44C04D2F105 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0BBDF8DEC5D56316986BBAA0FBC0F71E /* LICENSE */,
+				CAF2D29E4090EBDD31FC9B06AB4978AF /* MXRichTextView.podspec */,
+				BFD09B5BEAEA184CE561122AE1272C74 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -299,7 +294,7 @@
 			buildPhases = (
 				C7ECD6CF66A935F644775394098B9F05 /* Sources */,
 				AB324AD7824611BB1D99C19EB2B4F73F /* Frameworks */,
-				9DCE5047B4680502C229A9A1184E6063 /* Resources */,
+				C5CEFCF15B6E4595D869AF6C8CDB7CA9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -348,22 +343,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DCE5047B4680502C229A9A1184E6063 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				931600BC188FA5744FB105F0CF45DFB7 /* bootstrap in Resources */,
-				E2A492166B87B406B3B134D9374507A3 /* dist in Resources */,
-				4818ADA8161623C628AC7DD48BC35F9E /* editor.js in Resources */,
-				F0B812883D946F9C2C37E28C929E68F5 /* jquery in Resources */,
-				A50525C8C93B11038DBE99E2A4407C69 /* richEditor.html in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A93AAC86E608C11E8B30B324338E2CF8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5CEFCF15B6E4595D869AF6C8CDB7CA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F92588AF5804421EAD42A7024086AF34 /* bootstrap in Resources */,
+				82D051AD6E0A4B26D03313792F861045 /* dist in Resources */,
+				033BA4E4C85D079FFB36362EF0024A5F /* editor.js in Resources */,
+				7EEB96F29DBBA0A5AD5829915390D089 /* jquery in Resources */,
+				990DA1948C192AF70D645B89890CAFFB /* richEditor.html in Resources */,
+				AC515EBE79461BA789AA2CD360EA25C0 /* turndown.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,142 +411,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		385ABC512C7BBFECD4368DA377E395B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02182AEC7BE15FD72801840ECF5A4651 /* Pods-MXRichTextView_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MXRichTextView_Example/Pods-MXRichTextView_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MXRichTextView_Example/Pods-MXRichTextView_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		644A8EDD7C8D2014FD1B7AA3B3B07578 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE167009C3AEBC7EA4C942E91C9C94BC /* MXRichTextView.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MXRichTextView";
-				IBSC_MODULE = MXRichTextView;
-				INFOPLIST_FILE = "Target Support Files/MXRichTextView/ResourceBundle-MXRichTextView-MXRichTextView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = MXRichTextView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		7D1CC117C304FCD89F1422E9090C7BFC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83F9A7EC5A10E83194A4522124358A22 /* Pods-MXRichTextView_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MXRichTextView_Example/Pods-MXRichTextView_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MXRichTextView_Example/Pods-MXRichTextView_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		86AB1C9B95EE2506C2502D5351594196 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE167009C3AEBC7EA4C942E91C9C94BC /* MXRichTextView.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MXRichTextView/MXRichTextView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MXRichTextView/MXRichTextView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MXRichTextView/MXRichTextView.modulemap";
-				PRODUCT_MODULE_NAME = MXRichTextView;
-				PRODUCT_NAME = MXRichTextView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9CF60CBA5E8A1ECA483217D65EE8BDC2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64B426272EBCBB147EDC0377284C0910 /* MXRichTextView.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MXRichTextView";
-				IBSC_MODULE = MXRichTextView;
-				INFOPLIST_FILE = "Target Support Files/MXRichTextView/ResourceBundle-MXRichTextView-MXRichTextView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = MXRichTextView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+		431BA2B8298F0EE71735B9E0114E1955 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -573,6 +438,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -607,10 +473,42 @@
 			};
 			name = Release;
 		};
-		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+		479BF6969ADD78127A91AC84DAB1B7E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B934D6206F74013AAF6A25956C2698D4 /* MXRichTextView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MXRichTextView/MXRichTextView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MXRichTextView/MXRichTextView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MXRichTextView/MXRichTextView.modulemap";
+				PRODUCT_MODULE_NAME = MXRichTextView;
+				PRODUCT_NAME = MXRichTextView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		79759604D78320E712558F49DF19AA9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -633,6 +531,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -671,11 +570,74 @@
 			};
 			name = Debug;
 		};
-		F6B45655DC840D6F490A61CFDE5510B4 /* Release */ = {
+		A72CB37FEE07C4B61DDCA2AF451B2F48 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64B426272EBCBB147EDC0377284C0910 /* MXRichTextView.release.xcconfig */;
+			baseConfigurationReference = FA59929C8ECBE139F17BD2632035A37D /* MXRichTextView.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MXRichTextView";
+				IBSC_MODULE = MXRichTextView;
+				INFOPLIST_FILE = "Target Support Files/MXRichTextView/ResourceBundle-MXRichTextView-MXRichTextView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = MXRichTextView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		ADB876ADD89E936621ECD63F9165C7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02182AEC7BE15FD72801840ECF5A4651 /* Pods-MXRichTextView_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MXRichTextView_Example/Pods-MXRichTextView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MXRichTextView_Example/Pods-MXRichTextView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C4D0A407BA8244A102E902F3A931B2E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B934D6206F74013AAF6A25956C2698D4 /* MXRichTextView.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MXRichTextView";
+				IBSC_MODULE = MXRichTextView;
+				INFOPLIST_FILE = "Target Support Files/MXRichTextView/ResourceBundle-MXRichTextView-MXRichTextView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = MXRichTextView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		CACB8B282CE6292E410686E8CEDB0059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA59929C8ECBE139F17BD2632035A37D /* MXRichTextView.debug.xcconfig */;
+			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -697,6 +659,38 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F1AA99FFD03435B7CE03CDA62F48042D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83F9A7EC5A10E83194A4522124358A22 /* Pods-MXRichTextView_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MXRichTextView_Example/Pods-MXRichTextView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MXRichTextView_Example/Pods-MXRichTextView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -709,8 +703,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
-				B0087CB4594321EF41619F3181FE120E /* Release */,
+				79759604D78320E712558F49DF19AA9F /* Debug */,
+				431BA2B8298F0EE71735B9E0114E1955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -718,8 +712,8 @@
 		A4DA348B012CAF4508DD4FEF0156FE45 /* Build configuration list for PBXNativeTarget "MXRichTextView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86AB1C9B95EE2506C2502D5351594196 /* Debug */,
-				F6B45655DC840D6F490A61CFDE5510B4 /* Release */,
+				CACB8B282CE6292E410686E8CEDB0059 /* Debug */,
+				479BF6969ADD78127A91AC84DAB1B7E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -727,8 +721,8 @@
 		C470F801F8CD085C59E3A05EC2FA55BF /* Build configuration list for PBXNativeTarget "Pods-MXRichTextView_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				385ABC512C7BBFECD4368DA377E395B1 /* Debug */,
-				7D1CC117C304FCD89F1422E9090C7BFC /* Release */,
+				ADB876ADD89E936621ECD63F9165C7A0 /* Debug */,
+				F1AA99FFD03435B7CE03CDA62F48042D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -736,8 +730,8 @@
 		CD640FB7D9FD315A9CEF6065A64A5244 /* Build configuration list for PBXNativeTarget "MXRichTextView-MXRichTextView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				644A8EDD7C8D2014FD1B7AA3B3B07578 /* Debug */,
-				9CF60CBA5E8A1ECA483217D65EE8BDC2 /* Release */,
+				A72CB37FEE07C4B61DDCA2AF451B2F48 /* Debug */,
+				C4D0A407BA8244A102E902F3A931B2E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

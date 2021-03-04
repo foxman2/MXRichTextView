@@ -155,7 +155,8 @@ public class MXRichTextView: UIView, MXSummernoteDelegate {
             var link: String? = nil
             if let json = info as? String,
                let data = json.data(using: .utf8),
-               let jsonObj = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+               let jsonObjT = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+               let jsonObj = jsonObjT {
                 title = jsonObj["text"] as? String
                 link = jsonObj["url"] as? String
             }
