@@ -6,6 +6,7 @@
 //
 
 public class MXRichTextButton: UIControl {
+    
     public struct Config {
         let icon: UIImage
         let activeIcon: UIImage
@@ -16,27 +17,95 @@ public class MXRichTextButton: UIControl {
         }
     }
     
-    public struct Style {
-        let key: String
-        let value: String
-        let command: MXRictEditCommand
+    public enum Style {
+        case bold, italic, underline, strikethrough, formatH1, formatH2, justifyLeft, justifyCenter, justifyRight, orderedList, unorderedList
         
-        public static let bold = Style(key: "font-bold", value: "bold", command: .bold)
-        public static let italic = Style(key: "font-italic", value: "italic", command: .italic)
-        public static let underline = Style(key: "font-underline", value: "underline", command: .underline)
-        public static let strikethrough = Style(key: "font-strikethrough", value: "strikethrough", command: .strikethrough)
+        var command: MXRictEditCommand {
+            switch self {
+            case .bold:
+                return .bold
+            case .italic:
+                return .italic
+            case .underline:
+                return .underline
+            case .strikethrough:
+                return .strikethrough
+            case .formatH1:
+                return .formatH1
+            case .formatH2:
+                return .formatH2
+            case .justifyLeft:
+                return .justifyLeft
+            case .justifyCenter:
+                return .justifyCenter
+            case .justifyRight:
+                return .justifyRight
+            case .orderedList:
+                return .insertOrderedList
+            case .unorderedList:
+                return .insertUnorderedList
+            }
+        }
         
-        public static let formatH1 = Style(key: "font-block", value: "h1", command: .formatH1)
-        public static let formatH2 = Style(key: "font-block", value: "h2", command: .formatH2)
-        public static let formatH3 = Style(key: "font-block", value: "h3", command: .formatH3)
-        
-        public static let justifyLeft = Style(key: "text-align", value: "left", command: .justifyLeft)
-        public static let justifyCenter = Style(key: "text-align", value: "center", command: .justifyCenter)
-        public static let justifyRight = Style(key: "text-align", value: "right", command: .justifyRight)
-        
-        public static let insertOrderedList = Style(key: "list-style", value: "ordered", command: .insertOrderedList)
-        public static let insertUnorderedList = Style(key: "list-style", value: "unordered", command: .insertUnorderedList)
-        
+        func isSelected(styles: [AnyHashable : Any]) -> Bool {
+            switch self {
+            case .bold:
+                if let value = styles["bold"] as? Bool {
+                    return value
+                }
+                return false
+            case .italic:
+                if let value = styles["italic"] as? Bool {
+                    return value
+                }
+                return false
+            case .underline:
+                if let value = styles["underline"] as? Bool {
+                    return value
+                }
+                return false
+            case .strikethrough:
+                if let value = styles["deleteline"] as? Bool {
+                    return value
+                }
+                return false
+            case .formatH1:
+                if let value = styles["h1"] as? Bool {
+                    return value
+                }
+                return false
+            case .formatH2:
+                if let value = styles["h2"] as? Bool {
+                    return value
+                }
+                return false
+            case .justifyLeft:
+                if let value = styles["left"] as? Bool {
+                    return value
+                }
+                return false
+            case .justifyCenter:
+                if let value = styles["center"] as? Bool {
+                    return value
+                }
+                return false
+            case .justifyRight:
+                if let value = styles["right"] as? Bool {
+                    return value
+                }
+                return false
+            case .orderedList:
+                if let value = styles["ol"] as? Bool {
+                    return value
+                }
+                return false
+            case .unorderedList:
+                if let value = styles["ul"] as? Bool {
+                    return value
+                }
+                return false
+            }
+        }
     }
     
     private let imageView: UIImageView = {
@@ -45,6 +114,7 @@ public class MXRichTextButton: UIControl {
         imageView.contentMode = .center
         return imageView
     }()
+        
     private let config: Config
     private let style: Style
     private weak var textView: MXRichTextView?
@@ -86,16 +156,11 @@ public class MXRichTextButton: UIControl {
             return
         }
         
-        let acvtive:Bool
-        if let value = status[style.key] as? String, value == style.value {
-            acvtive = true
-        } else {
-            acvtive = false
-        }
-        isActive = acvtive
+        isActive = style.isSelected(styles: status)
     }
     
     @objc private func onClick() {
+        isActive = !isActive
         if let textView = textView {
             textView.excuteCommand(style.command)
         }

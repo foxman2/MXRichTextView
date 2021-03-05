@@ -33,31 +33,7 @@ var initSummernote = function(){
         callbacks: {
             onInit: function(e) {
                 $("#summernote").summernote("fullscreen.toggle");
-            },
-            onChange: function(contents, $editable) {
-                console.log('onChange:', contents, $editable);
-                const message = {
-                    text: contents,
-                    isEmpty:  $('#summernote').summernote('isEmpty')
-                }
-                const json = JSON.stringify(message)
-                window.webkit.messageHandlers.event_text_change.postMessage(json)
-            },
-            onUpdateButtonStatus: function(styleInfo) {
-                const json = JSON.stringify(styleInfo)
-                window.webkit.messageHandlers.event_update_current_style.postMessage(json)
-            },
-            onKeyup: function(e) {
-                const result = $('#summernote').summernote('getLinkInfo');
-                const json = JSON.stringify(result);
-                window.webkit.messageHandlers.event_link_info.postMessage(json)
-            },
-            onMouseup: function(e) {
-                const result = $('#summernote').summernote('getLinkInfo');
-                const json = JSON.stringify(result);
-                window.webkit.messageHandlers.event_link_info.postMessage(json)
-            },
-            //'summernote.keyup summernote.mouseup summernote.change summernote.scroll': () => {
+            }
         }
     });
     

@@ -85,16 +85,7 @@ public class MXRichTextView: UIView, MXSummernoteDelegate {
         webView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         webView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         
-        webView.configuration
-            .userContentController
-            .add(editorCallback, name: editorCallback.event_update_current_style)
-        webView.configuration
-            .userContentController
-            .add(editorCallback, name: editorCallback.event_text_change)
-        webView.configuration
-            .userContentController
-            .add(editorCallback, name: editorCallback.event_link_info)
-
+        editorCallback.attachTo(wkConfig: webView.configuration)
     }
     
     public func loadEditor() {
@@ -155,8 +146,7 @@ public class MXRichTextView: UIView, MXSummernoteDelegate {
             var link: String? = nil
             if let json = info as? String,
                let data = json.data(using: .utf8),
-               let jsonObjT = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
-               let jsonObj = jsonObjT {
+               let jsonObj = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
                 title = jsonObj["text"] as? String
                 link = jsonObj["url"] as? String
             }
@@ -168,13 +158,5 @@ public class MXRichTextView: UIView, MXSummernoteDelegate {
     public func updateCurrentStyle(_ style: [String : Any]) {
         NotificationCenter.default.post(name: MXRichTextView.updateStyleNotification, object: self, userInfo: style)
         delegate?.updateCurrentStyle(style)
-    }
-    
-    public func richTextChange(text: String?, isEmpty: Bool) {
-        delegate?.richTextChange(text: text, isEmpty: isEmpty)
-    }
-    
-    public func richTextLinkInfoAtSelection(_ info: [String : Any]) {
-        delegate?.richTextLinkInfoAtSelection(info)
     }
 }
