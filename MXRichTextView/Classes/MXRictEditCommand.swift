@@ -41,6 +41,8 @@ public enum MXRictEditCommand: MXRictEditCommandProtocol {
     
     case clean
     
+    case disable, enable
+    
     public func excute(webView: WKWebView, callback: ((Any?, Error?)->Void)?) {
         let js: String
         switch self {
@@ -84,7 +86,10 @@ public enum MXRictEditCommand: MXRictEditCommandProtocol {
             js = "insertAttachment('\(url)')"
         case .clean:
             js = "clean()"
-            
+        case .enable:
+            js = "enable()"
+        case .disable:
+            js = "disable()"
         }
         
         webView.evaluateJavaScript(js, completionHandler: callback)
