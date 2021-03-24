@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'MXRichTextView/Classes/**/*'
   
    s.resource_bundles = {
-     'MXRichTextView' => ['MXRichTextView/Assets/**/*']
+     'MXRichTextView' => ['MXRichTextView/Assets/*', 'MXRichTextView/Assets/dist/*']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
