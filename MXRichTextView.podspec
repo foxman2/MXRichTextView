@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MXRichTextView'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of MXRichTextView.'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/b9d606c86e170baea85d0a4c2469f8e8f6705314/MXRichTextView'
+  s.homepage         = 'https://github.com/foxman2/MXRichTextView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'b9d606c86e170baea85d0a4c2469f8e8f6705314' => '395911263@qq.com' }
-  s.source           = { :git => 'https://github.com/b9d606c86e170baea85d0a4c2469f8e8f6705314/MXRichTextView.git', :tag => s.version.to_s }
+  s.author           = { 'foxman2' => '395911263@qq.com' }
+  s.source           = { :git => 'https://github.com/foxman2/MXRichTextView.git', :tag => s.version.to_s, :submodules => true}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
