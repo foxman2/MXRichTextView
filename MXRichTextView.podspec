@@ -28,10 +28,6 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/foxman2/MXRichTextView.git', :tag => s.version.to_s, :submodules => true}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.subspec 'SummerNote' do |summerNote|
-    summerNote.resources = 'MXRichTextView/Assets/dist/*'
-  end
-
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'MXRichTextView/Classes/**/*'
